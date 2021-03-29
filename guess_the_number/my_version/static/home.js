@@ -8,11 +8,12 @@ historydiv = document.getElementById('guess-history');
 window.onload = () => {
     randomNumber = Math.floor((Math.random() * 100) + 1);
 };
-function checkNumber(number) {
-    if (number == "") {
+function checkNumber(num) {
+
+    number = parseInt(num);
+    if (isNaN(number) || (number.toString().length != num.length)) {
         return ""
     }
-    number = parseInt(number);
     if (number > randomNumber) {
         let history = '<div class="history-item">Guess ' + number.toString() + ' is greater than actual number</div>'
         history += historydiv.innerHTML
