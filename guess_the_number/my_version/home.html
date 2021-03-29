@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/home.css">
+    <title>Guess the number game</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Guess The Number</h1>
+    </div>
+    <div class="container">
+        <div class="game">
+            <div class="game-heading">
+                <h1>Lets Go....</h1>
+            </div>
+            <input type="text" id='number-input'>
+            <div class="buttons">
+                <button id='check-btn'>Check</button>
+                <button id="reset-btn">Reset</button>
+            </div>
+            <div class="alert alert-success" id='success-msg'>WOW!! You made a right guess.</div>
+            <div id="guess-history">
+                <!-- <div class="history-item">Guess 7 is less than actual number</div> -->
+            </div>
+        </div>
+    </div>
+    <script src="static/home.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
